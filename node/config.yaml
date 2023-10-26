@@ -1,7 +1,7 @@
-service_name: 'example'
+service_name: 'example9999'
 
 http:
-  url: http://0.0.0.0:9000
+  url: http://0.0.0.0:9999
   cors:
     access_control_allow_headers:
       - Content-Type
