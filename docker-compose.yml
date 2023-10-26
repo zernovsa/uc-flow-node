@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  flow-node-99999:
+    restart: 'no'
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    working_dir: /opt/app
+    command:
+      sh -c "sleep infinity"
+    environment:
+      - PYTHONPATH=/opt/app
+    volumes:
+      - ./node:/opt/app/node
+      - ./node/config.yaml:/opt/app/conf/config.yml
